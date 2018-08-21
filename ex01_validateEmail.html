@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate email</title>
+</head>
+<body>
+<script>
+
+
+    function checkEmail(str) {
+        regexp = /^[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]+$/;
+        if (regexp.test(str)) {
+            alert("Ok! Valid");
+        } else {
+            alert("Sorry! Invalid, please input again");
+        }
+
+    }
+
+    str1 = prompt("input an email");
+    checkEmail(str1);
+</script>
+</body>
+</html>
